@@ -52,3 +52,6 @@ The project seeks to bridge the gap between digital asset creation and ownership
 - Register multiple assets in a single transaction
 - Bulk transfer capabilities for portfolio management
 - Group verification for collections
+### contract Address
+contract address - 0x87Ab34AD9287d437dF4F5B1Aec8d4c58Aa634894
+![Uploading image.png…]()
