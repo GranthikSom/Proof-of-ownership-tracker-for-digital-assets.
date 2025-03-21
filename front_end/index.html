@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Asset Ownership</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Digital Asset Ownership</h1>
+        
+        <div class="form">
+            <h2>Register Asset</h2>
+            <input type="text" id="name" placeholder="Asset Name">
+            <input type="text" id="description" placeholder="Description">
+            <input type="text" id="assetURI" placeholder="Asset URI">
+            <input type="text" id="contentHash" placeholder="Content Hash">
+            <label><input type="checkbox" id="isTransferable"> Transferable</label>
+            <button onclick="registerAsset()">Register</button>
+        </div>
+        
+        <div class="assets">
+            <h2>Your Assets</h2>
+            <ul id="assetList"></ul>
+        </div>
+        
+        <div class="transfer">
+            <h2>Transfer Asset</h2>
+            <input type="number" id="transferAssetId" placeholder="Asset ID">
+            <input type="text" id="newOwner" placeholder="New Owner Address">
+            <button onclick="transferAsset()">Transfer</button>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
